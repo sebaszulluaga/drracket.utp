@@ -1,0 +1,24 @@
+; contacto sebastian.zuluaga2@utp.edu.co
+; ejercicio cond
+
+(display "Bienvenido a Comidas MC somos especialistas en sandwiches.")
+(newline)
+(display "Este es el menu de para hoy.")
+(newline)
+(display"     1.Sandwich de jamon sencillo.")
+(newline)
+(display"     2.Sandwich de jamon doble.")
+(newline)   
+(display"     3.Sandwich de jamon triple.")
+(newline)
+(display"Recuerda poner el tipo de sandwich y la cantidad")
+(newline)
+(display "ejemplo para pedir cinco sanduches de jamon doble: (pagar 2 5)")
+
+(define (pagar tipo_sandwich cantidad)
+  (cond
+    ((= tipo_sandwich 1)(* 12000 cantidad))
+    ((= tipo_sandwich 2)(* 13500 cantidad))
+    ((= tipo_sandwich 3)(* 14800 cantidad))
+  (else
+     (display "Escoge un menu disponible"))))
